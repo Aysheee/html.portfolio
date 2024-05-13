@@ -1,97 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Chessboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
   <style>
-    /* Write your code here */
-    /* Each square should be 100px by 100px */
-    /* My colours for white: #f0d9b5, black: #b58{863 */
-      
-    .container{
-      width:800px;
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;}
+
+
+
+    .container {
+      height: 748px;
+      width: 748px;
+      background-color: #000;
       display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-.white{
-  height:  100px ;
-  width:100px;
-  background-color: #f0d9b5;}
-.black{
-        height:  100px ;
-        width:100px;
-        background-color:#b58863 ;}
+      
+      grid-template-columns: 320px 198px 153px 50px ;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px
+    }
+    .item-1{ 
+      background-color:#E72F24;
+      
+     
+    }
+    .item-2{ 
+      background-color:#F0F1EC;
+    grid-column:span 3;}
+      
+
+    .item-3{
+       background-color:#F0F1EC;
+       grid-row: span 2;
+      }
+      
+    
+    .item-4{
+       background-color:#F0F1EC;
+       grid-area: 2 / 2 / 4 /4;}
+
+   .item-5{
+       background-color:#004592;
+       border-bottom: 10px solid #000;}
+   .item-6{ 
+      background-color:#F0F1EC;
+    grid-row:span 2;}
+
+    .item-7{ 
+      background-color:#F0F1EC;
+      grid-row:span 2;}
+
+    .item-8{ 
+      background-color:#F9D01E;
+      }
+
+    .item-9{ 
+      background-color:#232629;
+      }
+   
+     
+
+
+    
+
   </style>
 </head>
 
 <body>
   <div class="container">
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
+    <div class="item-1">1</div>
+    <div class="item-2">2</div>
+    <div class="item-3">3</div>
+    <div class="item-4">4</div>
+    <div class="item-5">5</div>
+    <div class="item-6">6</div>
+    <div class="item-7">7</div>
+    <div class="item-8">8</div>
+    <div class="item-9">9</div>
+    
   </div>
+  <!-- Write your HTML here -->
 </body>
 
 </html>
